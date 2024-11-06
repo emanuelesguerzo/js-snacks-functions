@@ -14,3 +14,4 @@ const getInitials = (array) => array.map(firstLetter => firstLetter[0]);
 console.log(getInitials(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
