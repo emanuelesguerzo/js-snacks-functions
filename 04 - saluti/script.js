@@ -8,7 +8,7 @@ const name = 'Mario';
  * @returns {string}
  */
 
-const greeting = (name) => `ciao ${name}`;
+const greeting = name => `ciao ${name}`;
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(greeting("Mario"));

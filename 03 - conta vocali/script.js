@@ -8,7 +8,7 @@ const word = 'javascript';
  * @returns {string}
  */
 
-const getVowels = (string) => {
+const getVowels = string => {
     const vowels = ["a", "e", "i", "o", "u"];
     const foundVowels = string.split('').filter(letter => vowels.includes(letter));
     return `${foundVowels.length} (${foundVowels.join(", ")})`;

@@ -8,7 +8,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
  * @returns {array}
  */
 
-const getInitials = (array) => array.map(firstLetter => firstLetter[0]);
+const getInitials = array => array.map(firstLetter => firstLetter[0]);
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(getInitials(names));

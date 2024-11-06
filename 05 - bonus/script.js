@@ -7,7 +7,7 @@ e buonasera se è sera (oltre le 17)
 const name = 'Mario';
 
 // Dichiara la funzione qui.
-const greeting = (name) => {
+const greeting = name => {
     const hour = new Date().getHours();
 
     if (hour < 13) {
