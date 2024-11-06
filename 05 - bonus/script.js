@@ -10,6 +10,33 @@ const name = 'Mario';
 const greeting = (name) => {
     const hour = new Date().getHours();
 
+    if (hour < 13) {
+        return `Buongiorno ${name}`;
+    } else if (hour < 17) {
+        return `Buon Pomeriggio ${name}`;
+    } else {
+        return `Buonasera ${name}`;
+    }
+};
+
+// Invoca la funzione qui e stampa il risultato in console
+console.log(greeting("Mario"));
+
+//Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
+//BONUS 
+/* Scrivi una funzione che accetti una stringa contenente un nome e restituisca un saluto seguito dal nome fornito. 
+Il saluto deve essere :
+buongiorno se è mattina (fino alle 13), 
+buon pomeriggio se è pomeriggio (fino alle 17) 
+e buonasera se è sera (oltre le 17)
+*/
+const name2 = 'Mario';
+
+// Dichiara la funzione qui.
+function greeting2(name) {
+    const hour = new Date().getHours();
+
     let greet = "";
     if (hour < 13) {
         greet = "Buongiorno";
@@ -22,6 +49,6 @@ const greeting = (name) => {
 };
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(greeting("Mario"));
+console.log(greeting2("Mario"));
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
