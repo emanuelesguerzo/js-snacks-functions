@@ -22,12 +22,12 @@ const names2 = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 /**
  * Description
- * @param {array} array2
+ * @param {array} array
  * @returns {array}
  */
 
-function getInitials2(array2) {
-    const initials = array2.map(function(letter) {
+function getInitials2(array) {
+    const initials = array.map(function(letter) {
         return letter[0];
     });
     return initials;
