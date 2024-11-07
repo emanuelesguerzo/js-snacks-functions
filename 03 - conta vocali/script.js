@@ -32,10 +32,15 @@ const word2 = 'javascript';
 
 function getVowels2(string) {
     const vowels2 = ["a", "e", "i", "o", "u"];
-    const foundVowels = string.split('').filter(function(letter) {
-        return vowels2.includes(letter);
-    });
-    return `${foundVowels.length} (${foundVowels.join(", ")})`;
+    let count = 0;
+
+    for(let i = 0; i < string.length; i++) {
+        const curItem = string[i];
+        if (vowels2.includes(curItem.toLowerCase())) {
+            count++
+        }
+    }
+    return count;
 }
 
 // Invoca la funzione qui e stampa il risultato in console

@@ -28,11 +28,17 @@ const names2 = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
  * @returns {array}
  */
 
+
 function getWordByLetter2(array, letter) {
-    const firstLetter = array.filter(function(word) {
-        return word[0] === letter;
-    })
-    return firstLetter;
+
+   const result = [];
+   for (let i = 0; i < array.length; i++) {
+        let curItem = array[i];
+        if (letter === curItem[0]) {
+            result.push(curItem);
+        }
+   }
+   return result;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
